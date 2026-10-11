@@ -9,7 +9,7 @@ from fastapi.middleware.cors import CORSMiddleware
 # secret API key (kept in an environment variable, never in this file) and
 # forcing a known-good model so it works no matter what model name is sent.
 UPSTREAM = "https://api.groq.com/openai/v1/chat/completions"
-MODEL    = "llama-3.1-8b-instant"          # current free Groq model
+MODEL = "llama-3.3-70b-versatile"       # current free Groq model
 API_KEY  = os.environ.get("GROQ_API_KEY")  # set this in Render's Environment tab
 
 app = FastAPI()
